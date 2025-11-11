@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <table class="table-exemple">
+        <caption>Счет</caption>
+        <thead>
+            <tr>
+                <th>Наименование</th>
+                <th>Цена</th>
+                <th>Кол-во</th>
+                <th>Стоимость</th>
+            </tr>
+        </thead>
+    
+    <tbody>
+        <tr>
+            <td>Ручка</td>
+            <td>50 &#8381</td>
+            <td rowspan="2">2</td>
+            <td>100 &#8381</td>
+        </tr>
+        <tr>
+            <td>Карандаш</td>
+            <td>40 &#8381</td>
+            <td>80 &#8381</td>
+        </tr>
+        <tr>
+            <td>Тетрадь</td>
+            <td>70 &#8381</td>
+            <td>10</td>
+            <td>700 &#8381</td>
+        </tr>
+        <tr>
+            <td colspan="3">Итого</td>
+            <td>880 &#8381</td>
+        </tr>
+    </tbody>
+    </table>
+
+    <form id="registration" action="">
+        <label for="logan">Введите логин</label><br>
+        <input type="text" id="logan" name="logan" placeholder="Логин" required><br>
+        <label for="passw">Введите пароль</label><br>
+        <input type="password" id="passw" name="passw" placeholder="Пароль" required><br>
+        <input type="radio" id="male" name="gender" checked>
+        <label for="male">муж</label>
+        <input type="radio" id="female" name="gender">
+        <label for="female">жен</label><br>
+
+        <label for="role">Выбирете роль</label><br>
+        <select name="role" id="role">
+            <option value="Студент">Студент</option>
+            <option value="Преподователь">Преподователь</option>
+            <option value="Сотрудник">Сотрудник</option>
+        </select><br>
+        <label for="cooment">Комментарий</label><br>
+        <textarea name="comment" id="comment" rows="10" cols="12"></textarea><br>
+        <input type="submit" value="Зарегестрироваться">
+    </form>
+</body>
+</html>
